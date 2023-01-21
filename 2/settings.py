@@ -1,0 +1,2 @@
+PREFFERED_LENGHT_UNIT = 'cm'
+UNITS_TO_LOOK_FOR = ['cm','in']
