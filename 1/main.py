@@ -6,7 +6,10 @@ import pandas as pd
 from datetime import datetime
 
 
-def get_number_from_string(s):
+def get_numbers_from_string(s):
+    """
+    Extracts numbers from a string. if a string contains 1 number it is returned as an int. If multiple - a list of integers.
+    """
     p = '[\d]+[.,\d]+|[\d]*[.][\d]+|[\d]+'
     r = []
     if re.search(p, s) is not None:
